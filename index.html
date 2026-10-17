@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Hajar Bettiche | Cloud Infrastructure &amp; DevOps</title>
+<meta name="description" content="Portfolio of Hajar Bettiche, final-year Cloud Computing &amp; Virtualization engineering student at UIR, looking for a 6-month PFE internship in Cloud, DevOps and Infrastructure.">
+<style>
+:root{--bg:#171213;--surface:#211a1c;--line:#3a2e31;--text:#f5ede9;--muted:#b9a9a9;--accent:#f0566d;--on-accent:#180e10;--warm:#d9a441;--frame:#ffffff}
+@media (prefers-color-scheme:light){:root{--bg:#faf6f2;--surface:#ffffff;--line:#e8ddd5;--text:#1d1517;--muted:#6a5c5d;--accent:#b0122e;--on-accent:#ffffff;--warm:#8a5f0d}}
+*{box-sizing:border-box}
+html{scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:600;line-height:1.2;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.bar{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar-in{max-width:900px;margin:0 auto;padding:0 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.brand{font-family:Georgia,serif;font-weight:600;font-size:1.05rem;color:var(--text);text-decoration:none;white-space:nowrap;padding:1rem 0}
+nav{display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{color:var(--muted);text-decoration:none;padding:1rem .75rem;border-bottom:2px solid transparent;white-space:nowrap;font-size:.95rem}
+nav a:hover{color:var(--text)}
+nav a[aria-current="page"]{color:var(--text);border-bottom-color:var(--accent)}
+main{max-width:900px;margin:0 auto;padding:2.5rem 1.25rem 4rem}
+.js .panel[hidden]{display:none}
+.panel>h2{font-size:1.7rem;margin-bottom:1.5rem}
+.hero h1{font-size:clamp(2.4rem,7vw,3.8rem);letter-spacing:-.01em}
+.hero-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:center}
+.photo{margin:0;position:relative;justify-self:end;width:100%;max-width:300px}
+.photo::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--accent);border-radius:150px 150px 14px 14px}
+.photo img{position:relative;display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 12%;background:var(--frame);border-radius:150px 150px 14px 14px}
+.role{font-family:Georgia,serif;font-size:1.25rem;color:var(--muted);margin:.5rem 0 1.5rem}
+.lead{font-size:1.1rem;max-width:62ch}
+p{max-width:68ch}
+.btns{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.75rem}
+.btn{display:inline-block;padding:.55rem 1rem;border:1px solid var(--line);border-radius:6px;color:var(--text);text-decoration:none;background:var(--surface);font-size:.95rem}
+.btn:hover{border-color:var(--accent)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:600}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:1.4rem 1.5rem;margin-bottom:1.25rem}
+.card h3{font-size:1.25rem;margin-bottom:.25rem}
+.sub{color:var(--muted);margin:0 0 .9rem;font-size:.95rem}
+.card ul{margin:.5rem 0 1rem;padding-left:1.2rem}
+.card li{margin:.3rem 0}
+.stack{color:var(--muted);font-size:.9rem;margin:.5rem 0 .75rem}
+.stack b{color:var(--text);font-weight:600}
+.tag{display:inline-block;border:1px solid var(--warm);color:var(--warm);border-radius:999px;padding:0 .6rem;font-size:.8rem;margin-left:.5rem;vertical-align:middle;font-family:system-ui,sans-serif}
+.links a{margin-right:1.1rem}
+.when{float:right;color:var(--muted);font-size:.9rem}
+dl{margin:0}
+dl div{display:grid;grid-template-columns:11rem 1fr;gap:1rem;padding:.85rem 0;border-top:1px solid var(--line)}
+dl div:first-child{border-top:0}
+dt{font-weight:600}
+dd{margin:0;color:var(--muted)}
+.edu{margin:0 0 1.4rem}
+.edu h3{font-size:1.1rem}
+.edu p{margin:.15rem 0;color:var(--muted)}
+h2.sec{font-size:1.25rem;margin:2.2rem 0 1rem}
+footer{max-width:900px;margin:0 auto;padding:1.5rem 1.25rem 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero-grid{grid-template-columns:1fr;gap:2.25rem}.photo{order:-1;justify-self:start;max-width:220px;margin-right:14px}}
+@media (max-width:640px){.bar-in{flex-direction:column;align-items:flex-start;gap:0}.brand{padding-bottom:.25rem}nav{width:100%}dl div{grid-template-columns:1fr;gap:.25rem}.when{float:none;display:block;margin-bottom:.4rem}}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="bar-in">
+    <a class="brand" href="#about">Hajar Bettiche</a>
+    <nav aria-label="Portfolio sections">
+      <a href="#about">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="about" class="panel hero">
+  <div class="hero-grid">
+  <div class="hero-text">
+  <h1>Hajar Bettiche</h1>
+  <p class="role">Cloud Infrastructure &amp; DevOps Engineer</p>
+  <p class="lead">Final-year Cloud Computing &amp; Virtualization engineering student at UIR, looking for a 6-month PFE internship starting in January in Cloud, DevOps and Infrastructure.</p>
+  <p>I build hands-on infrastructure projects around virtualization, networking, automation and security: Proxmox, WireGuard, Terraform, Ansible, Docker and GitLab CI. My internship at CMR gave me real experience with network monitoring and troubleshooting.</p>
+  <div class="btns">
+    <a class="btn main" href="assets/Hajar_Bettiche_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    <a class="btn" href="https://github.com/hajar-bettiche-07" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://gitlab.com/bettichehajar" target="_blank" rel="noopener">GitLab</a>
+    <a class="btn" href="https://www.linkedin.com/in/hajar-bettiche/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="mailto:bettichehajar@gmail.com">Email</a>
+  </div>
+  </div>
+  <figure class="photo"><img src="assets/profile.jpg" alt="Portrait of Hajar Bettiche" width="640" height="1034"></figure>
+  </div>
+</section>
+
+<section id="projects" class="panel">
+  <h2>Projects</h2>
+
+  <article class="card">
+    <h3>Azure Zero Trust Network Access Lab</h3>
+    <p class="sub">Securing remote administration of an Azure VM with Zero Trust principles.</p>
+    <p>Only WireGuard is exposed to the internet. SSH is dropped at the Azure NSG and reachable only from inside the VPN tunnel, so nothing answers on port 22 from the open internet. The Azure layer is provisioned with Terraform, and the Linux hardening was done by hand to understand how cloud and host controls interact.</p>
+    <ul>
+      <li><b>Azure (Terraform):</b> VNet, subnet, NSG, public IP and Ubuntu 22.04 VM. The NSG allows only UDP 51820 and denies all other inbound traffic.</li>
+      <li><b>WireGuard:</b> server on 10.8.0.1/24, client pinned by AllowedIPs, peers keyed by public key, private keys locked down with chmod 600.</li>
+      <li><b>Host hardening:</b> UFW allows SSH only from the VPN subnet, sshd uses key-only authentication with root login disabled, Fail2Ban protects the sshd jail.</li>
+      <li><b>Validated:</b> SSH to the public IP times out, SSH through the tunnel works.</li>
+      <li><b>Troubleshooting documented:</b> lockout after an ISP IP change (recovered through the Azure Serial Console, then redesigned so no public-IP rule can drift), Fail2Ban banning my own session, WireGuard not persisting after reboot, an Azure for Students region policy blocking the deployment.</li>
+    </ul>
+    <p class="stack"><b>Stack:</b> Azure, Terraform, WireGuard, UFW, Fail2Ban, OpenSSH, Ubuntu 22.04</p>
+    <p class="links"><a href="https://github.com/hajar-bettiche-07/zerotrust-lab" target="_blank" rel="noopener">View on GitHub</a></p>
+  </article>
+
+  <article class="card">
+    <h3>Private Virtualized Cloud with Proxmox VE</h3>
+    <p class="sub">A segmented private cloud with isolated dev and prod environments.</p>
+    <p>Proxmox VE runs nested inside VirtualBox. Dev and prod live on separate virtual networks, and a dedicated controller VM is the only machine connected to all three networks, acting as bastion, Ansible controller and NAT gateway.</p>
+    <ul>
+      <li><b>Provisioning:</b> a Debian 12 cloud image turned into a template, then linked clones configured with cloud-init (hostname, static IP, SSH key).</li>
+      <li><b>Network:</b> three Linux bridges, nftables on the controller with a default drop policy and NAT masquerade, and no rule between dev and prod. Isolation tested at network and service level.</li>
+      <li><b>Automation:</b> Ansible playbooks (base packages, Docker and Compose, service deployment) with one inventory per environment. Workflow: test on dev, then apply to prod. Idempotence verified.</li>
+      <li><b>Services:</b> nginx deployed with Docker Compose on both environments.</li>
+      <li><b>Lifecycle:</b> snapshot and rollback tested, vzdump backup of prod and restore to a new VM.</li>
+      <li><b>Troubleshooting documented:</b> nested virtualization blocked by Hyper-V, unstable ISO install (switched to cloud-init), no DHCP, SSH host key changes, RAM pressure.</li>
+    </ul>
+    <p class="stack"><b>Stack:</b> Proxmox VE, KVM/QEMU, cloud-init, Ansible, Docker Compose, nftables, Debian 12</p>
+    <p class="links"><a href="https://github.com/hajar-bettiche-07/cloud-private-proxmox" target="_blank" rel="noopener">View on GitHub</a></p>
+  </article>
+
+  <article class="card">
+    <h3>DevSecOps CI/CD Pipeline <span class="tag">In progress</span></h3>
+    <p class="sub">A fully automated pipeline from commit to deployment, with security checks at every stage.</p>
+    <p>A containerized Flask API goes through a GitLab CI pipeline with no manual step between build and deployment.</p>
+    <ul>
+      <li>Tests with pytest and Docker image build.</li>
+      <li>Static analysis with a blocking SonarQube quality gate.</li>
+      <li>Dependency scanning with pip-audit and a CycloneDX SBOM sent to Dependency-Track.</li>
+      <li>Artifact storage in Nexus.</li>
+      <li>Secrets managed in HashiCorp Vault, authenticated through GitLab JWT.</li>
+    </ul>
+    <p class="stack"><b>Stack:</b> GitLab CI, Docker, SonarQube, Dependency-Track, Nexus, Vault, pip-audit, Python</p>
+    <p class="links"><a href="https://gitlab.com/bettichehajar/devsecops-pipeline" target="_blank" rel="noopener">View on GitLab</a></p>
+  </article>
+
+  <article class="card">
+    <h3>VMware ESXi Virtualized Infrastructure</h3>
+    <p class="sub">Bare-metal virtualization and VM administration.</p>
+    <ul>
+      <li>Installed and configured VMware ESXi on a bare-metal server (network, DNS, hostname, access).</li>
+      <li>Created and deployed two Windows Server 2019 VMs with custom resource allocation.</li>
+      <li>Managed the environment through vSphere Client, handled datastores and optimized performance with VMware Tools.</li>
+    </ul>
+    <p class="stack"><b>Stack:</b> VMware ESXi, vSphere Client, Windows Server 2019</p>
+  </article>
+
+  <article class="card">
+    <h3>ChatBook: RAG Question-Answering on Books</h3>
+    <p class="sub">Team project.</p>
+    <p>I contributed to ChatBook, an assistant that answers questions about a novel using only real passages from the text, to reduce LLM hallucinations. Books come from a Gutenberg dataset on Hugging Face, read in streaming mode. Paragraphs are converted to 384-dimension vectors with FastEmbed (BGE-small-en-v1.5) and stored in Qdrant, with one collection per book. For each question, the most similar passages are retrieved by cosine similarity (top-k) and sent to GPT-5-nano with strict instructions to answer from that context. A Gradio interface lets the user pick a book and chat.</p>
+    <p class="stack"><b>Stack:</b> Python, FastEmbed, Qdrant, GPT-5-nano, Gradio, Hugging Face</p>
+    <p class="links"><a href="https://github.com/hajar-bettiche-07/Ai-book-chat" target="_blank" rel="noopener">View on GitHub</a></p>
+  </article>
+
+  <article class="card">
+    <h3>Olivium: Web3 Olive Oil Traceability Platform</h3>
+    <p class="sub">LERMA Lab internship project.</p>
+    <p>Built the Olivium website, a Web3 platform for olive oil traceability. The architecture combines IoT with the IOTA blockchain to secure the traceability of the data.</p>
+    <p class="stack"><b>Stack:</b> React.js, React Bootstrap, IOTA, IoT</p>
+  </article>
+</section>
+
+<section id="experience" class="panel">
+  <h2>Experience</h2>
+
+  <article class="card">
+    <span class="when">July 2026</span>
+    <h3>Caisse Marocaine des Retraites (CMR), Rabat</h3>
+    <p class="sub">PFA internship: Systems &amp; Network Administration / Monitoring</p>
+    <p>Network Performance Monitoring project. The goal was to supervise the network infrastructure proactively and detect incidents before they affect users.</p>
+    <ul>
+      <li>Deployed and configured Zabbix 7.4 on Ubuntu Server as the central monitoring platform.</li>
+      <li>Secured the monitoring with SNMPv3 in authPriv mode (SHA authentication, AES encryption) toward a Cisco Catalyst 2960X access switch stack.</li>
+      <li>Detected real network anomalies such as interface flapping and link-down events.</li>
+      <li>Designed dashboards to visualize network health and performance.</li>
+      <li>Configured alerting and email notifications through SMTP for proactive incident detection.</li>
+      <li>Carried out performance analysis, troubleshooting and Root Cause Analysis (RCA) to improve availability.</li>
+      <li>Documented the work in a full internship report and presented it in a final defense.</li>
+    </ul>
+    <p class="stack"><b>Stack:</b> Zabbix 7.4, SNMPv3, Cisco Catalyst 2960X, Ubuntu Server, SMTP</p>
+  </article>
+
+  <article class="card">
+    <span class="when">July 2025</span>
+    <h3>LERMA Lab, Rabat</h3>
+    <p class="sub">PFA internship: Web3 / IoT &amp; Blockchain development</p>
+    <p>Worked on Olivium, a Web3 platform for olive oil traceability.</p>
+    <ul>
+      <li>Developed the Olivium website with React.js and React Bootstrap.</li>
+      <li>Worked on an architecture combining IoT and the IOTA blockchain to guarantee the traceability of the data.</li>
+    </ul>
+    <p class="stack"><b>Stack:</b> React.js, React Bootstrap, IOTA, IoT</p>
+  </article>
+</section>
+
+<section id="skills" class="panel">
+  <h2>Skills</h2>
+  <div class="card">
+    <dl>
+      <div><dt>Cloud &amp; DevOps</dt><dd>Azure, AWS, Docker, Docker Compose, Terraform, Ansible, GitLab CI/CD</dd></div>
+      <div><dt>Virtualization</dt><dd>Proxmox VE, VMware ESXi</dd></div>
+      <div><dt>Systems &amp; tools</dt><dd>Linux (Ubuntu Server), Windows Server, Git</dd></div>
+      <div><dt>Storage</dt><dd>RAID, NAS, SAN, Backup/Recovery</dd></div>
+      <div><dt>Networking</dt><dd>DNS, DHCP, VLAN, SDN, VPN, WireGuard, UFW, SNMPv3</dd></div>
+      <div><dt>Security</dt><dd>ZTNA, Access Control, SSH Hardening, Fail2Ban</dd></div>
+      <div><dt>Monitoring</dt><dd>Zabbix, Grafana, Prometheus</dd></div>
+      <div><dt>Programming &amp; databases</dt><dd>Python, MySQL</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="education" class="panel">
+  <h2>Education</h2>
+  <div class="edu"><h3>Université Internationale de Rabat (UIR)</h3><p>Engineering degree, Cloud Computing &amp; Virtualization · 2024–2027</p></div>
+  <div class="edu"><h3>CPGE Ibn Ghazi, Rabat</h3><p>Preparatory classes MPSI/MP · 2022–2024</p></div>
+  <div class="edu"><h3>Lycée Abdelkrim El Khattabi, Tiflet</h3><p>Baccalauréat Sciences Mathématiques A (BIOF) · 2022</p></div>
+
+  <h2 class="sec">Certifications</h2>
+  <div class="edu"><h3>Microsoft Azure Fundamentals (AZ-900)</h3><p>In progress</p></div>
+  <div class="edu"><h3>Linux Unhatched</h3><p>Cisco Networking Academy</p></div>
+
+  <h2 class="sec">Languages</h2>
+  <p>French (fluent) · English (fluent) · Arabic (native)</p>
+</section>
+
+<section id="contact" class="panel">
+  <h2>Contact</h2>
+  <p class="lead">I’m looking for a 6-month PFE internship starting in January in Cloud, DevOps and Infrastructure. The fastest way to reach me is by email.</p>
+  <div class="btns">
+    <a class="btn main" href="mailto:bettichehajar@gmail.com">bettichehajar@gmail.com</a>
+    <a class="btn" href="https://www.linkedin.com/in/hajar-bettiche/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/hajar-bettiche-07" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://gitlab.com/bettichehajar" target="_blank" rel="noopener">GitLab</a>
+    <a class="btn" href="assets/Hajar_Bettiche_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Hajar Bettiche · Rabat, Morocco</footer>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var panels=[].slice.call(document.querySelectorAll('.panel'));
+  var links=[].slice.call(document.querySelectorAll('.bar a'));
+  var ids=panels.map(function(p){return p.id});
+  function show(id){
+    if(ids.indexOf(id)===-1){id='about';}
+    panels.forEach(function(p){p.hidden=(p.id!==id);});
+    links.forEach(function(a){
+      if(a.getAttribute('href')==='#'+id&&a.parentNode.tagName==='NAV'){a.setAttribute('aria-current','page');}
+      else{a.removeAttribute('aria-current');}
+    });
+    try{history.replaceState(null,'','#'+id);}catch(e){}
+    window.scrollTo(0,0);
+  }
+  links.forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      show(a.getAttribute('href').slice(1));
+      if(a.scrollIntoView){a.scrollIntoView({block:'nearest',inline:'center'});}
+    });
+  });
+  var start='about';
+  try{start=location.hash.slice(1)||'about';}catch(e){}
+  show(start);
+})();
+</script>
+</body>
+</html>
