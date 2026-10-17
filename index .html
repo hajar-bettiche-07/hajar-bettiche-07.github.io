@@ -7,9 +7,11 @@
 <title>Hajar Bettiche | Cloud Infrastructure &amp; DevOps</title>
 <meta name="description" content="Portfolio of Hajar Bettiche, final-year Cloud Computing &amp; Virtualization engineering student at UIR, looking for a 6-month PFE internship in Cloud, DevOps and Infrastructure.">
 <style>
-:root{--bg:#171213;--surface:#211a1c;--line:#3a2e31;--text:#f5ede9;--muted:#b9a9a9;--accent:#f0566d;--on-accent:#180e10;--warm:#d9a441;--frame:#ffffff}
-@media (prefers-color-scheme:light){:root{--bg:#faf6f2;--surface:#ffffff;--line:#e8ddd5;--text:#1d1517;--muted:#6a5c5d;--accent:#b0122e;--on-accent:#ffffff;--warm:#8a5f0d}}
+:root{--bg:#171213;--surface:#211a1c;--line:#3a2e31;--text:#f5ede9;--muted:#b9a9a9;--accent:#f0566d;--on-accent:#180e10;--warm:#d9a441;--tint:#ecd8d1}
+@media (prefers-color-scheme:light){:root{--bg:#faf6f2;--surface:#ffffff;--line:#e8ddd5;--text:#1d1517;--muted:#6a5c5d;--accent:#b0122e;--on-accent:#ffffff;--warm:#8a5f0d;--tint:#f2e1da}}
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+p,li,dd,h3{overflow-wrap:break-word}
 html{scroll-padding-top:5rem}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 h1,h2,h3{font-family:Georgia,"Iowan Old Style","Times New Roman",serif;font-weight:600;line-height:1.2;margin:0}
@@ -28,9 +30,8 @@ main{max-width:900px;margin:0 auto;padding:2.5rem 1.25rem 4rem}
 .panel>h2{font-size:1.7rem;margin-bottom:1.5rem}
 .hero h1{font-size:clamp(2.4rem,7vw,3.8rem);letter-spacing:-.01em}
 .hero-grid{display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:center}
-.photo{margin:0;position:relative;justify-self:end;width:100%;max-width:300px}
-.photo::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:2px solid var(--accent);border-radius:150px 150px 14px 14px}
-.photo img{position:relative;display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:50% 12%;background:var(--frame);border-radius:150px 150px 14px 14px}
+.photo{margin:0;justify-self:end;width:100%;max-width:300px;aspect-ratio:3/4;background:var(--tint);border-radius:150px 150px 16px 16px;overflow:hidden}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 8%;mix-blend-mode:multiply}
 .role{font-family:Georgia,serif;font-size:1.25rem;color:var(--muted);margin:.5rem 0 1.5rem}
 .lead{font-size:1.1rem;max-width:62ch}
 p{max-width:68ch}
@@ -58,8 +59,24 @@ dd{margin:0;color:var(--muted)}
 .edu p{margin:.15rem 0;color:var(--muted)}
 h2.sec{font-size:1.25rem;margin:2.2rem 0 1rem}
 footer{max-width:900px;margin:0 auto;padding:1.5rem 1.25rem 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
-@media (max-width:760px){.hero-grid{grid-template-columns:1fr;gap:2.25rem}.photo{order:-1;justify-self:start;max-width:220px;margin-right:14px}}
-@media (max-width:640px){.bar-in{flex-direction:column;align-items:flex-start;gap:0}.brand{padding-bottom:.25rem}nav{width:100%}dl div{grid-template-columns:1fr;gap:.25rem}.when{float:none;display:block;margin-bottom:.4rem}}
+@media (max-width:760px){.hero-grid{grid-template-columns:1fr;gap:2rem}.photo{order:-1;justify-self:center;max-width:240px}}
+@media (max-width:640px){
+.bar-in{padding:0 .5rem}
+.brand{display:none}
+nav{width:100%}
+nav a{padding:.9rem .7rem}
+main{padding:1.5rem 1rem 3rem}
+.hero h1{font-size:2.3rem}
+.role{font-size:1.1rem;margin-bottom:1.1rem}
+.lead{font-size:1.02rem}
+.btns .btn{flex:1 1 calc(50% - .6rem);text-align:center}
+.btns .btn.main{flex-basis:100%}
+.card{padding:1.1rem 1rem}
+.card ul{padding-left:1.05rem}
+dl div{grid-template-columns:1fr;gap:.25rem}
+.when{float:none;display:block;margin-bottom:.4rem}
+footer{padding:1.25rem 1rem 2.5rem}
+}
 </style>
 </head>
 <body>
